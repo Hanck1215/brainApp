@@ -74,7 +74,7 @@
 			/*<img id="pinecone" src="" alt="pinecone">*/
             let video_frame = document.getElementById("video_frame");
             let imgElements = document.getElementById("pinecone");
-            let ws = new WebSocket('ws://192.168.1.104:9002');
+            let ws = new WebSocket('wss://192.168.1.104:9002');
             ws.onmessage = event => { imgElements.src = event.data;}
         </script>
     </body>
